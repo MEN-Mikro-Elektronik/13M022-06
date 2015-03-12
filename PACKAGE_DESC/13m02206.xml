@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Klaus Popp (MEN Mikro Elektronik GmbH) -->
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
+	<name>13m02206</name>
+	<description>MDIS4 driver package for MEN M22 and M24 M-Module</description>
+	<date>2014-07-16</date>
+	<revision>2.2</revision>
+	<docroot>DRIVERS/MDIS_LL/M022/DOC/main.html</docroot>
+	<modellist>
+		<model>
+			<hwname>M22</hwname>
+			<description>8 Binary Power Outputs</description>
+			<devtype>MDIS</devtype>
+			<autoid>
+				<mmoduleid>0x53460016</mmoduleid>
+			</autoid>
+			<busif>M-Module</busif>
+		</model>
+		<model>
+			<hwname>M24</hwname>
+			<description>16 Binary Inputs</description>
+			<devnameprefix>M24</devnameprefix>
+			<devtype>MDIS</devtype>
+			<autoid>
+				<mmoduleid>0x53460018</mmoduleid>
+			</autoid>
+			<busif>M-Module</busif>
+		</model>
+	</modellist>
+	<settinglist>
+		<settingsubdir rangestart="0" rangeend="15">
+			<name>CHANNEL_</name>
+			<setting>
+				<name>INACTIVE</name>
+				<description>Activate/deactivate channel</description>
+				<type>U_INT32</type>
+				<defaultvalue>0</defaultvalue>
+				<choises>
+					<choise>
+						<value>0</value>
+						<description>active</description>
+					</choise>
+					<choise>
+						<value>1</value>
+						<description>not active</description>
+					</choise>
+				</choises>
+			</setting>
+			<setting>
+				<name>INPUT_EDGE_MASK</name>
+				<description>input edge mask</description>
+				<type>U_INT32</type>
+				<defaultvalue>0</defaultvalue>
+				<choises>
+					<choise>
+						<value>0</value>
+						<description>disabled</description>
+					</choise>
+					<choise>
+						<value>1</value>
+						<description>rising edge</description>
+					</choise>
+					<choise>
+						<value>2</value>
+						<description>falling edge</description>
+					</choise>
+					<choise>
+						<value>3</value>
+						<description>any edge</description>
+					</choise>
+				</choises>
+			</setting>
+			<setting>
+				<name>ALARM_EDGE_MASK</name>
+				<description>alarm edge mask, M22 only</description>
+				<type>U_INT32</type>
+				<defaultvalue>0</defaultvalue>
+				<choises>
+					<choise>
+						<value>0</value>
+						<description>disabled</description>
+					</choise>
+					<choise>
+						<value>1</value>
+						<description>rising edge</description>
+					</choise>
+					<choise>
+						<value>2</value>
+						<description>falling edge</description>
+					</choise>
+					<choise>
+						<value>3</value>
+						<description>any edge</description>
+					</choise>
+				</choises>
+			</setting>
+		</settingsubdir>
+	</settinglist>
+	<swmodulelist>
+		<swmodule>
+			<name>m22</name>
+			<description>Driver for M22 and M24</description>
+			<type>Low Level Driver</type>
+			<makefilepath>M022/DRIVER/COM/driver.mak</makefilepath>
+		</swmodule>
+		<swmodule>
+			<name>m22_simp</name>
+			<description>Simple test of the m22 MDIS driver</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>M022/EXAMPLE/M22_SIMP/COM/program.mak</makefilepath>
+		</swmodule>
+		<swmodule>
+			<name>m24_simp</name>
+			<description>Simple test of the m22/24 MDIS driver</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>M022/EXAMPLE/M24_SIMP/COM/program.mak</makefilepath>
+		</swmodule>
+		<swmodule internal="true">
+			<name>m22_main</name>
+			<description>Test of the m22_drv.c</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>M022/TEST/M22_MAIN/COM/program.mak</makefilepath>
+		</swmodule>
+	</swmodulelist>
+</package>

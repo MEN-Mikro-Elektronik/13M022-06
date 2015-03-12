@@ -1,0 +1,46 @@
+Program Description
+===================
+Wed Apr 28 15:03:00 MET 2004
+ 
+Overview of all Programs
+------------------------
+
+m22_simp         - M22 example for port I/O
+m24_simp         - M24 example for port input
+
+Program m22_simp
+----------------
+
+Usage:
+   m22_simp <device>
+
+Function:
+   M22 example for port I/O
+
+Options:
+   device       device name   
+   
+Description:
+   Simple example program for the M22 driver   
+   
+   Opens the device, writes and reads all channels.
+   Shows the read values.
+
+
+Program m24_simp
+----------------
+
+Usage:
+   m24_simp <device>
+
+Function:
+   M24 example for port input
+
+Options:
+   device       device name   
+   
+Description:
+   Simple example program for the M24 driver   
+   
+   Opens the device, reads all channels,
+   shows the read values.
