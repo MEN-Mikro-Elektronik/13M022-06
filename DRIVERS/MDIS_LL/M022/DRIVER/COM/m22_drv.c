@@ -27,37 +27,23 @@
  *	   Required: ---
  *	   Switches: _ONE_NAMESPACE_PER_DRIVER_
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m22_drv.c,v $
- * Revision 1.6  2014/07/16 12:43:17  ts
- * R: first changes for MDIS5 compatibility from 2008 not completely up to date
- * M: updated GetStat Function for compatibility with other MDIS5 LL GetStats
- *
- * Revision 1.5  2008/09/15 16:00:28  ufranke
- * R: diab compiler warnings
- * M: cosmetics
- *
- * Revision 1.4  2008/01/18 14:25:48  ufranke
- * changed
- *  + prepared for 64bit OS
- *  + setStat arg value is INT32_OR_64 now
- *
- * Revision 1.3  2004/04/29 11:22:45  cs
- * Minor changes for MDIS4/2004 conformity
- *   moved defines for swapped variant to driver_sw.mak and m22_drv.h
- *   minor typecasts for WIN2k compiler compatibility
- *   changed global consts errorStartStr, errorLineStr and errorEndStr to defines
- *
- * Revision 1.2  2000/11/17 14:00:46  Franke
- * bugfix for M22 - irq causing channel was wrong on alarm
- *
- * Revision 1.1  2000/07/13 11:42:29  Franke
- * Initial Revision
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 2000..2008 by MEN Mikro Elektronik GmbH,	Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static const char IdentString[]="M22 - m22 low level driver: $Id: m22_drv.c,v 1.6 2014/07/16 12:43:17 ts Exp $";
 
 #define _NO_LL_HANDLE		/* ll_defs.h: don't define LL_HANDLE struct */

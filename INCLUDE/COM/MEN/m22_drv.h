@@ -13,18 +13,23 @@
  *	   Switches: _ONE_NAMESPACE_PER_DRIVER_
  *				 _LL_DRV_
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m22_drv.h,v $
- * Revision 2.2  2004/04/29 11:23:25  cs
- * moved swapped variant defines from m22_drv.c to here
- *
- * Revision 2.1  2000/07/06 16:49:52  Franke
- * Initial Revision
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 2000 by MEN mikro elektronik GmbH,	Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef	_M22_LLDRV_H
 #  define _M22_LLDRV_H
 

@@ -14,26 +14,23 @@
  *     Switches: -
  *
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m22_simp.c,v $
- * Revision 1.4  2010/09/01 12:47:09  UFranke
- * R: #warning "VxWorks Source Build (VSB) project not specified;
- * M: include order changed
- *
- * Revision 1.3  2008/12/05 10:58:41  ufranke
- * R: error if ch 0..7 was not activated by descriptor
- * M: activate each channel before toggling
- *
- * Revision 1.2  2006/07/20 15:08:10  ufranke
- * cosmetics
- *
- * Revision 1.1  2000/07/13 11:42:45  Franke
- * Initial Revision
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 2000..2010 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static char *RCSid="$Id: m22_simp.c,v 1.4 2010/09/01 12:47:09 UFranke Exp $\n";
 
 #include <MEN/men_typs.h>

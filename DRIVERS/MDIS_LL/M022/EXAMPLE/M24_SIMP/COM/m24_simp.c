@@ -13,21 +13,23 @@
  *     Switches: -
  *
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m24_simp.c,v $
- * Revision 1.3  2009/03/30 14:02:36  ufranke
- * cosmetics
- *
- * Revision 1.2  2006/07/20 15:08:17  ufranke
- * cosmetics
- *
- * Revision 1.1  2000/07/13 11:42:56  Franke
- * Initial Revision
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 2000..2009 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static char *RCSid="$Id: m24_simp.c,v 1.3 2009/03/30 14:02:36 ufranke Exp $\n";
 
 #include <MEN/men_typs.h>
