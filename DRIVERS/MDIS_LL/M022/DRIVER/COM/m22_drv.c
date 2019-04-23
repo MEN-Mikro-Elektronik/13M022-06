@@ -1019,12 +1019,12 @@ static int32 M22_GetStat
     INT32_OR_64 *value32_or_64P
  )
 {
-	DBGCMD(	static const char functionName[] = "LL - M22_GetStat:" );
-	int32	retCode = 0;
-	int32	processId;
-	u_int8  rdVal;
-    int32       *valueP   = (int32*)value32_or_64P;         /* pointer to 32bit value  */
-    INT32_OR_64 *value64P = value32_or_64P;                 /* stores 32/64bit pointer  */
+	int32 retCode = 0;
+	int32 processId;
+	u_int8 rdVal;
+	int32 *valueP = (int32*)value32_or_64P; /* pointer to 32bit value */
+	INT32_OR_64 *value64P = value32_or_64P; /* stores 32/64bit pointer */
+	DBGCMD( static const char functionName[] = "LL - M22_GetStat:" );
 
 	DBGWRT_1((DBH, "%s code=$%04lx\n", functionName, code) );
 
