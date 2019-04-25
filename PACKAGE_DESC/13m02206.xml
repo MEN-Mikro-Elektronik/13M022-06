@@ -2,7 +2,7 @@
 <!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Klaus Popp (MEN Mikro Elektronik GmbH) -->
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
 	<name>13m02206</name>
-	<description>MDIS4 driver package for MEN M22 and M24 M-Module</description>
+	<description>MDIS5 driver package for MEN M22 and M24 M-Module</description>
 	<date>2014-07-16</date>
 	<revision>2.2</revision>
 	<docroot>DRIVERS/MDIS_LL/M022/DOC/main.html</docroot>
