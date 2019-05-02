@@ -14,41 +14,24 @@
  *     Switches: -
  *
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m22_main.c,v $
- * Revision 1.8  2009/03/30 14:29:09  ufranke
- * R: endless mode missing
- * M: optional endless mode added
- *
- * Revision 1.7  2008/09/15 16:00:55  ufranke
- * R: diab compiler warnings
- * M: cosmetics
- *
- * Revision 1.6  2006/07/20 15:13:23  ufranke
- * cosmetics
- *
- * Revision 1.5  2004/05/13 14:46:28  UFranke
- * cosmetics
- *
- * Revision 1.4  2004/04/29 11:23:13  cs
- * Minor changes for MDIS4/2004 conformity
- *   added include stdlib.h
- *   removed include dbg.h (kernel env only)
- *   replaced dbg.h defines DBG_INTR/DBG_LEV2 with local defines DBG_INTR_LOC/DBG_LEV2_LOC
- *
- * Revision 1.3  2002/09/10 12:22:15  UFranke
- * cosmetics
- *
- * Revision 1.2  2000/11/21 11:41:13  Franke
- * cosmetics
- *
- * Revision 1.1  2000/07/13 11:43:09  Franke
- * Initial Revision
- *
  *---------------------------------------------------------------------------
- * (c) Copyright 2000..2009 by MEN mikro elektronik GmbH, Nuernberg, Germany
+ * Copyright (c) 2000-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 static char *RCSid="$Id: m22_main.c,v 1.8 2009/03/30 14:29:09 ufranke Exp $";
 
 #include <MEN/men_typs.h>
