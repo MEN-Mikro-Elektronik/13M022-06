@@ -4,8 +4,6 @@
  *      Project: MDIS 4.x
  *
  *       Author: uf
- *        $Date: 2010/09/01 12:47:09 $
- *    $Revision: 1.4 $
  *
  *  Description: simple test of the m22 mdis driver
  *               Each channel will be toggle.
@@ -31,7 +29,6 @@
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-static char *RCSid="$Id: m22_simp.c,v 1.4 2010/09/01 12:47:09 UFranke Exp $\n";
 
 #include <MEN/men_typs.h>
 
@@ -43,6 +40,8 @@ static char *RCSid="$Id: m22_simp.c,v 1.4 2010/09/01 12:47:09 UFranke Exp $\n";
 #include <MEN/mdis_err.h>
 
 #include <MEN/m22_drv.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*-----------------------------------------+
 |  TYPEDEFS                                |
@@ -135,7 +134,7 @@ static int _m22_simple( char *devName )
     int    errLine = 0;
 
     printf("=========================\n");
-    printf("%s", RCSid );
+    printf("%s", IdentString );
 
 
     printf("M_open\n");

@@ -3,8 +3,6 @@
  *		   Name: m22_driver.h
  *
  *		 Author: uf
- *		  $Date: 2004/04/29 11:23:25 $
- *	  $Revision: 2.2 $
  *
  *	Description: Header	file for M22 driver	modules
  *				 - M22 specific	status codes

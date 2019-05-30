@@ -4,8 +4,6 @@
  *      Project: MDIS 4.x
  *
  *       Author: uf
- *        $Date: 2009/03/30 14:02:36 $
- *    $Revision: 1.3 $
  *
  *  Description: simple test of the m22/m24 mdis driver
  *
@@ -30,7 +28,6 @@
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-static char *RCSid="$Id: m24_simp.c,v 1.3 2009/03/30 14:02:36 ufranke Exp $\n";
 
 #include <MEN/men_typs.h>
 
@@ -42,6 +39,8 @@ static char *RCSid="$Id: m24_simp.c,v 1.3 2009/03/30 14:02:36 ufranke Exp $\n";
 #include <MEN/mdis_err.h>
 
 #include <MEN/m22_drv.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*-----------------------------------------+
 |  TYPEDEFS                                |
@@ -132,7 +131,7 @@ static int _m24_simple( char *devName )
     int32  valL;
 
     printf("=========================\n");
-    printf("%s", RCSid );
+    printf("%s", IdentString );
 
 
     printf("M_open\n");

@@ -3,9 +3,7 @@
  *         Name: m22_main.c
  *      Project: MDIS 4.x
  *
- *      $Author: ufranke $
- *        $Date: 2009/03/30 14:29:09 $
- *    $Revision: 1.8 $
+ *      Author: ufranke 
  *
  *  Description: test of the m22_drv.c m22_drv.h
  *               signal handling and buffer modes
@@ -32,7 +30,6 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-static char *RCSid="$Id: m22_main.c,v 1.8 2009/03/30 14:29:09 ufranke Exp $";
 
 #include <MEN/men_typs.h>
 
@@ -45,6 +42,8 @@ static char *RCSid="$Id: m22_main.c,v 1.8 2009/03/30 14:29:09 ufranke Exp $";
 #include <MEN/mdis_err.h>
 
 #include <MEN/m22_drv.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 #ifdef VXWORKS
 	#include <logLib.h>
@@ -305,7 +304,7 @@ static int m22_openclose( char *devName )
     u_int32 i, dev;
     u_int32 maxWords;
     
-    printf("%s\n", RCSid);
+    printf("%s\n", IdentString);
     printf("=========================\n");
     printf("%s - open close \n", devName);
     printf("    open\n");

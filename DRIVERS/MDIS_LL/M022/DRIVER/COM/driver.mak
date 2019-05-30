@@ -1,12 +1,9 @@
 #***************************  M a k e f i l e  *******************************
 #
 #         Author: uf
-#          $Date: 2004/04/29 11:22:47 $
-#      $Revision: 1.2 $
-#        $Header: /dd2/CVSR/COM/DRIVERS/MDIS_LL/M022/DRIVER/COM/driver.mak,v 1.2 2004/04/29 11:22:47 cs Exp $
 #
 #    Description: makefile descriptor file for common
-#                 modules MDIS 4.x   e.g. low level driver
+#                 modules  e.g. low level driver
 #
 #-----------------------------------------------------------------------------
 #   Copyright (c) 1998-2019, MEN Mikro Elektronik GmbH
@@ -25,8 +22,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=m22
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13M022-06_02_03-6-g1e6686d-dirty_2019-05-10"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
 
 MAK_SWITCH=$(SW_PREFIX)MAC_MEM_MAPPED \
+		$(SW_PREFIX)$(DEF_REVISION) \
 
 MAK_LIBS=$(LIB_PREFIX)$(MEN_LIB_DIR)/desc$(LIB_SUFFIX)     \
          $(LIB_PREFIX)$(MEN_LIB_DIR)/id$(LIB_SUFFIX)       \

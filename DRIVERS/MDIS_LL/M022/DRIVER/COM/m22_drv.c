@@ -1,11 +1,9 @@
 /*********************	P r	o g	r a	m  -  M	o d	u l	e ***********************
  *
  *		   Name: m22_drv.c
- *		Project: M22 / M24 module driver (MDIS V4.x)
+ *		Project: M22 / M24 module driver 
  *
  *		 Author: uf
- *		  $Date: 2014/07/16 12:43:17 $
- *	  $Revision: 1.6 $
  *
  *  Description: Low-level driver for M22 and M24 M-Modules.
  *   The init routine detects the device type from the M-Module ID
@@ -44,7 +42,6 @@
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-static const char IdentString[]="M22 - m22 low level driver: $Id: m22_drv.c,v 1.6 2014/07/16 12:43:17 ts Exp $";
 
 #define _NO_LL_HANDLE		/* ll_defs.h: don't define LL_HANDLE struct */
 
@@ -93,6 +90,8 @@ typedef	struct
 /* include files which need LL_HANDLE */
 #include <MEN/ll_entry.h>   /* low-level driver jump table  */
 #include <MEN/m22_drv.h>   /* M22 driver header file */
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*-----------------------------------------+
   |  DEFINES & CONST						   |
