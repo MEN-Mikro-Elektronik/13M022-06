@@ -3,8 +3,8 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
 	<name>13m02206</name>
 	<description>MDIS5 driver package for MEN M22 and M24 M-Module</description>
-	<date>2014-07-16</date>
-	<revision>2.2</revision>
+	<date>2019-06-07</date>
+	<revision>13M022-06_02_03-8-gb81f5d2</revision>
 	<docroot>DRIVERS/MDIS_LL/M022/DOC/main.html</docroot>
 	<modellist>
 		<model>
