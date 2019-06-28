@@ -56,9 +56,6 @@ static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 /*-----------------------------------------+
 |  DEFINES & CONST                         |
 +------------------------------------------*/
-static const int32 OFF = 0;
-static const int32 ON  = 1;
-
 static const int32 T_OK = 0;
 static const int32 T_ERROR = 1;
 
@@ -858,12 +855,12 @@ static int m22_m24_test( char *devNameM22, char *devNameM24, int endless  )
     }/*if*/
 
 	/* M22 */
-    bufP = m22buf;
-    for( ch=0; ch<M22_MAX_CH; ch++)
-    	*bufP++ = 0;
+	bufP = m22buf;
+	for( ch=0; ch<M22_MAX_CH; ch++)
+		*bufP++ = 0;
 	nbrOfWrBytes = M_setblock(m22Fd, m22buf, M22_MAX_CH );
 	if( nbrOfWrBytes != M22_MAX_CH )
-    	error = 1;
+		error = 1;
 
     if( error )
     {
@@ -885,13 +882,13 @@ static int m22_m24_test( char *devNameM22, char *devNameM24, int endless  )
 	    M_setstat(m24Fd, M_MK_IRQ_ENABLE, 1);
 	UOS_Delay(1);
 
-    m22SignalCount = 0;
-    m24SignalCount = 0;
-   	blkStruct.size = 0;
-   	blkStruct.data = 0;
-    M_setstat(m22Fd, M22_24_SETBLOCK_CLEAR_INPUT_EDGE, (int32)&blkStruct);
-    if( dualModeM22M24 )
-	    M_setstat(m24Fd, M22_24_SETBLOCK_CLEAR_INPUT_EDGE, (int32)&blkStruct);
+	m22SignalCount = 0;
+	m24SignalCount = 0;
+	blkStruct.size = 0;
+	blkStruct.data = 0;
+	M_setstat(m22Fd, M22_24_SETBLOCK_CLEAR_INPUT_EDGE, (int32)&blkStruct);
+	if( dualModeM22M24 )
+		M_setstat(m24Fd, M22_24_SETBLOCK_CLEAR_INPUT_EDGE, (int32)&blkStruct);
 
     for( ch=0; ch<M22_MAX_CH; ch++)
     {
