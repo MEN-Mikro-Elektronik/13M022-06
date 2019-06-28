@@ -36,6 +36,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
 
 #include <MEN/usr_oss.h>
 #include <MEN/mdis_api.h>
@@ -886,9 +887,9 @@ static int m22_m24_test( char *devNameM22, char *devNameM24, int endless  )
 	m24SignalCount = 0;
 	blkStruct.size = 0;
 	blkStruct.data = 0;
-	M_setstat(m22Fd, M22_24_SETBLOCK_CLEAR_INPUT_EDGE, (int32)&blkStruct);
+	M_setstat(m22Fd, M22_24_SETBLOCK_CLEAR_INPUT_EDGE, (int32)(intptr_t)&blkStruct);
 	if( dualModeM22M24 )
-		M_setstat(m24Fd, M22_24_SETBLOCK_CLEAR_INPUT_EDGE, (int32)&blkStruct);
+		M_setstat(m24Fd, M22_24_SETBLOCK_CLEAR_INPUT_EDGE, (int32)(intptr_t)&blkStruct);
 
     for( ch=0; ch<M22_MAX_CH; ch++)
     {
